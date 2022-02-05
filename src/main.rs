@@ -24,8 +24,8 @@ fn main() {
             vec![
                 Input::from_vk(Vk::Control, Action::Press),
                 Input::from_vk(Vk::C, Action::Press),
-                Input::from_vk(Vk::Control, Action::Release),
                 Input::from_vk(Vk::C, Action::Release),
+                Input::from_vk(Vk::Control, Action::Release),
             ],
         ),
         (
@@ -33,8 +33,17 @@ fn main() {
             vec![
                 Input::from_vk(Vk::Control, Action::Press),
                 Input::from_vk(Vk::V, Action::Press),
-                Input::from_vk(Vk::Control, Action::Release),
                 Input::from_vk(Vk::V, Action::Release),
+                Input::from_vk(Vk::Control, Action::Release),
+            ],
+        ),
+        (
+            64_u8, // ctrl+z
+            vec![
+                Input::from_vk(Vk::Control, Action::Press),
+                Input::from_vk(Vk::Z, Action::Press),
+                Input::from_vk(Vk::Z, Action::Release),
+                Input::from_vk(Vk::Control, Action::Release),
             ],
         ),
     ]);
