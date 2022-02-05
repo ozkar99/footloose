@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 midir = "0.7.0"
 midi-control = "0.2.0"
+winput = "0.2.5"
